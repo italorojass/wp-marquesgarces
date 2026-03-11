@@ -9,16 +9,6 @@ services:
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
       WORDPRESS_DB_NAME: railway
-```
-
-### Paso 3 – Conectar a Railway
-1. Elimina el servicio WordPress actual
-2. **New Service → GitHub Repo**
-3. Selecciona `marquesgarces-wp`
-4. Railway detecta el Dockerfile y lo construye
-
-### Paso 4 – Agregar variables en Railway
-```
 WORDPRESS_DB_HOST=mariadb.railway.internal
 WORDPRESS_DB_USER=root
 WORDPRESS_DB_PASSWORD=tu_password
