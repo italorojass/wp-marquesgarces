@@ -1,0 +1,21 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "apache2-foreground"
+restartPolicyType = "on_failure"
+```
+
+### Paso 2 — Verifica que el Dockerfile esté en la raíz
+
+La estructura del repo debe quedar así:
+```
+wp-marquesgarces/
+├── Dockerfile
+├── railway.toml
+├── wp-config.php
+├── wp-admin/
+├── wp-content/
+├── wp-includes/
+└── index.php
